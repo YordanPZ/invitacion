@@ -208,27 +208,27 @@ export default function Page() {
         
         <div className="flex flex-wrap items-center justify-center ">
     
-        <div className="w-[50%] h-[55vh] min-w-[45vh] bg-pallete-5 flex flex-col items-center justify-center">
+        <div className="w-[50%] min-h-[35vh] min-w-[45vh] bg-pallete-5 flex flex-col items-center justify-center">
 
         <div className=" border-solid border-[#c3b5a8] border-b  mt-5 w-[60%]"></div>
         <h1 className="text-[50px] text-[#d2b89f] mt-2">XV</h1>
         <h2 className="text-[#655b59] font-serif text-[60px]">Florencia</h2>
-        <div className=" border-solid border-[#c3b5a8] border-b  mt-5 w-[60%]"></div>
+        <div className=" border-solid border-[#c3b5a8] border-b  mt-3 w-[60%]"></div>
         <h3 className="text-[#655b59]  text-[20px] ">MIS 15 AÑOS</h3>
           
           </div>
 
-        <div className="w-[50%] h-[55vh] min-w-[45vh] bg-pallete-5 flex flex-col items-center justify-center sombra_arriba_abajo">
+        <div className="w-[50%] h-[40vh] min-h-[35vh] min-w-[45vh] bg-pallete-5 flex flex-col items-end justify-center px-38">
          
-          <Link href="/" className="text-pallete-2 text-center text-[20px] w-full flex items-center justify-center hover:text-pallete-1 transition-all duration-900" >
+          <Link href="/" className="text-pallete-2 text-center text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900" >
             Confirmar Asistencia a fiesta
           </Link>
          
-          <Link href="/" className="text-pallete-2 text-center mt-2 text-[20px] w-full flex items-center justify-center hover:text-pallete-1 transition-all duration-900" >
+          <Link href="/" className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900" >
             Sugerir canción
           </Link>
          
-          <Link href="/" className="text-pallete-2 text-center mt-2 text-[20px] w-full flex items-center justify-center hover:text-pallete-1 transition-all duration-900" >
+          <Link href="/" className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900" >
             Agendar fiesta
           </Link>
           </div>
