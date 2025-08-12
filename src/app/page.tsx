@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="items-center justify-items-center">
+    <section className="items-center justify-items-center">
     <div className="min-h-screen min-w-screen flex items-center justify-center bg-pallete-6 w-full">
             <div className="relative flex flex-col items-center p-4 py-15 sm:p-6 md:p-8 pb-8 lg:px-10 max-w-4xl w-full">
 <CardDecoration className="size-16 sm:size-20 md:size-24 top-0 left-0" />
@@ -30,13 +30,13 @@ export default function Page() {
 </svg>
                 <h3 className="text-[#7c7a74] text-center mt-3 sm:mt-4 md:mt-5 text-base sm:text-lg md:text-xl px-4">La musica de fondo es parte de la experiencia</h3>
               
-              <section className="flex flex-col sm:flex-row gap-3 sm:gap-5 items-center justify-center mt-4 sm:mt-6 w-full">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 items-center justify-center mt-4 sm:mt-6 w-full">
                 <Link href="/invitation" className="text-white text-center text-base sm:text-lg md:text-xl hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[45px] sm:h-[50px] w-[80%] sm:w-[220px] md:w-[240px] flex items-center justify-center px-4">Ingresar con musica</Link>
                 <Link href="/invitation" className="text-white text-center text-base sm:text-lg md:text-xl hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[45px] sm:h-[50px] w-[80%] sm:w-[220px] md:w-[240px] flex items-center justify-center px-4">Ingresar sin musica</Link>
-              </section>
+              </div>
             </div>
 
         </div>
-    </div>
+    </section>
   );
 }

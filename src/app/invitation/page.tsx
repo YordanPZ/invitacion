@@ -159,6 +159,7 @@ export default function Page() {
           <DecorativeDivider />
         </div>
       </section>
+      
       {/*contenedor de mensaje final*/}
       <section className="min-h-[84vh] bg-pallete-6 w-full flex flex-col sombra_arriba_abajo">
     
