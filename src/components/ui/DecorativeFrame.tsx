@@ -1,12 +1,19 @@
-import Link from "next/link";
-import { PartySvg } from "../svg/PartySvg";
-import { CardDecorationPoint } from "../svg/CardDecorationPoint";
+import Image from "next/image";
+import { Button } from "./button";
+import AssistanceConfirmModal from "../modals/AssistanceConfirmModal";
+import MapModal from "../modals/MapModal";
 
 export default function DecorativeFrame({ className }: { className?: string }) {
   return (
-    <div className="flex border border-pallete-2 items-center flex-col  bg-pallete-5 rounded-[12px] relative z-0 p-3">
+    <div className="flex border border-pallete-2 items-center flex-col md:min-w-[400px] bg-pallete-5 rounded-[12px] relative z-0 p-3">
       <div className="flex flex-col justify-center items-center">
-        <img src="/confeti.png" className="w-24 h-24 mt-12" />
+        <Image
+          height={100}
+          width={100}
+          alt="confite"
+          src="/confeti.png"
+          className="w-24 h-24 mt-12"
+        />
         <h2 className="text-[#655b59] font-serif text-5xl mt-12">Fiesta</h2>
         <div className="flex items-center justify-center w-full px-8">
           <svg
@@ -35,24 +42,16 @@ export default function DecorativeFrame({ className }: { className?: string }) {
           <p className="text-[#655b59] text-[17px] mt-5">
             Sábado 15 de Junio - 17hs
           </p>
-          <Link
-            href="/"
-            className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center"
-          >
-            Agendar
-          </Link>
+        <AssistanceConfirmModal  nombreDelBoton="Agendar"  />
         </section>
 
         {/*Lugar*/}
         <section className="flex flex-col items-center justify-center w-full">
           <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Lugar</h2>
           <p className="text-[#655b59] text-[17px] mt-5">Salon Avril</p>
-          <Link
-            href="/"
-            className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center"
-          >
+          <Button className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center">
             Confirmar asistencia
-          </Link>
+          </Button>
         </section>
 
         {/*Direccion*/}
@@ -61,12 +60,7 @@ export default function DecorativeFrame({ className }: { className?: string }) {
           <p className="text-[#655b59] text-[17px] mt-5">
             Av. Principal #123, Colonia Centro
           </p>
-          <Link
-            href="/"
-            className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center"
-          >
-            ¿Cómo llegar?
-          </Link>
+          <MapModal />
         </section>
       </div>
     </div>

@@ -3,10 +3,12 @@ import DecoratedSection from "./DecoratedSection";
 import ModalComponent from "../ModalComponent";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import LineDecoration from "../svg/LineDecoration";
+import Image from "next/image";
+import { Button } from "./button";
 
 export default function DtsFiesta() {
   return (
-    <div>
+    <section className="min-h-[90vh] bg-pallete-6 w-full flex flex-col justify-center sombra_arriba_abajo pb-4 px-2">
       <div className="flex justify-center ">
         <svg
           width="300"
@@ -66,97 +68,102 @@ export default function DtsFiesta() {
         Junto a personas que son muy importantes en mi vida
       </p>
       <div className="flex justify-evenly mt-6 flex-wrap gap-4">
-        <DecoratedSection className="max-w-[350px] min-h-[500px]">
+        <DecoratedSection className="max-w-[350px] min-h-[500px] text-pallete-1">
           <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
             <h2 className="text-[#655b59] font-serif text-2xl ">Música</h2>
-            <img src="/confeti.png" className="w-24 h-24" />
+            <Image
+              height={100}
+              width={100}
+              alt="confite"
+              src="/confeti.png"
+              className="w-24 h-24"
+            />
             <p>
               ¿Cuál es la canción que no debe faltar en la PlayList de la
               fiesta?
             </p>
-           
-            
-          
-
-<ModalComponent nombreDelBoton="Sugerir cancion">
-
-           
-             
-<div className="flex flex-col justify-center items-center w-full">
-              {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
-              <img src="/auricular.png" className="w-24 h-24 py-2" />
-              <DialogTitle className="text-pallete-2 font-serif text-[25px]">
-             Sugerir cancion
-              </DialogTitle>
-          <LineDecoration/>
-          <div className="flex gap-10 mt-6 ">
-           
-          </div>
-         
-          <div className="flex flex-col justify-center items-center w-full">
-           <label className="mt-6 w-full text-[18px] ">
-            <input type="text" placeholder="Tu nombre" className="w-full text-center text-black"/>
-            </label>
-           
-           <div className=" border-solid border-[#c3b5a8] border-b  mt-2 w-full"></div>
-           
-           <label className="mt-6 w-full text-[18px] ">
-            <input type="text" placeholder="Nombre de cancion y autor" className="w-full text-center text-black"/>
-            </label>
-           
-           <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
-          
-           <label className="mt-6 w-full text-[18px] ">
-            <input type="text" placeholder="Si lo desea ingresa un link de youtube,spotify, etc." className="w-full text-center text-black"/>
-            </label>
-           
-           <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
-          
-          </div>
-              <Link
-                href="/"
-                className="text-white text-center text-[20px] mt-8 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center"
-              >
-                Enviar
-              </Link>
-</div>
-            
-</ModalComponent>
-            
-           
-
-            
-            
+            <ModalComponent nombreDelBoton="Sugerir cancion">
+              <div className="flex flex-col justify-center items-center w-full">
+                {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
+                <Image
+                  alt="auricular"
+                  src="/auricular.png"
+                  className="w-24 h-24 py-2"
+                  height={50}
+                  width={50}
+                />
+                <DialogTitle className="text-pallete-2 font-serif text-[25px]">
+                  Sugerir cancion
+                </DialogTitle>
+                <LineDecoration />
+                <div className="flex gap-10 mt-6 "></div>
+                <div className="flex flex-col justify-center items-center w-full">
+                  <label className="mt-6 w-full text-[18px] ">
+                    <input
+                      type="text"
+                      placeholder="Tu nombre"
+                      className="w-full text-center text-black"
+                    />
+                  </label>
+                  <div className=" border-solid border-[#c3b5a8] border-b  mt-2 w-full"></div>
+                  <label className="mt-6 w-full text-[18px] ">
+                    <input
+                      type="text"
+                      placeholder="Nombre de cancion y autor"
+                      className="w-full text-center text-black"
+                    />
+                  </label>
+                  <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
+                  <label className="mt-6 w-full text-[18px] ">
+                    <input
+                      type="text"
+                      placeholder="Si lo desea ingresa un link de youtube,spotify, etc."
+                      className="w-full text-center text-black"
+                    />
+                  </label>
+                  <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
+                </div>
+                <Button className="text-white text-center text-[20px] mt-8 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center">
+                  Enviar
+                </Button>
+              </div>
+            </ModalComponent>
           </div>
         </DecoratedSection>
-
-        <DecoratedSection className="max-w-[350px]">
+        <DecoratedSection className="max-w-[350px] text-pallete-1">
           <div className="flex border border-pallete-2 items-center justify-between flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
             <h2 className="text-[#655b59] font-serif text-2xl">Dress Code</h2>
-            <img src="/confeti.png" className="w-24 h-24" />
+            <Image
+              height={100}
+              width={100}
+              alt="confite"
+              src="/confeti.png"
+              className="w-24 h-24"
+            />
+
             <p>Una orientación para tu vestuario</p>
-            <Link
-              href="/"
-              className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center"
-            >
+            <Button className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center">
               Ver más
-            </Link>
+            </Button>
           </div>
         </DecoratedSection>
-        <DecoratedSection className="max-w-[350px]">
+        <DecoratedSection className="max-w-[350px] text-pallete-1">
           <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
             <h2 className="text-[#655b59] font-serif text-2xl">Tips y Notas</h2>
-            <img src="/confeti.png" className="w-24 h-24" />
+            <Image
+              height={100}
+              width={100}
+              alt="confite"
+              src="/confeti.png"
+              className="w-24 h-24"
+            />
             <p>Información adicional para tener en cuenta</p>
-            <Link
-              href="/"
-              className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center"
-            >
+            <Button className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center">
               + Info
-            </Link>
+            </Button>
           </div>
         </DecoratedSection>
       </div>
-    </div>
+    </section>
   );
 }

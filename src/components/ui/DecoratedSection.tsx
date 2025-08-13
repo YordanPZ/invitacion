@@ -13,10 +13,10 @@ function DecoratedSection({
       className={`bg-pallete-6 border border-pallete-3 p-10 relative ${className}`}
     >
       <div className="flex justify-between ">
-        <CardDecorationPoint className="size-10 z-10 absolute -top-[1.302px] -left-[1.302px] bg-pallete-6" />
-        <CardDecorationPoint className="size-10 z-10 absolute -top-[1.302px] -right-[1.302px] bg-pallete-6 rotate-90" />
-        <CardDecorationPoint className="size-10 z-10 absolute -bottom-[1.302px] -left-[1.302px] bg-pallete-6 -rotate-90" />
-        <CardDecorationPoint className="size-10 z-10 absolute -bottom-[1.302px] -right-[1.302px] bg-pallete-6 rotate-180" />
+        <CardDecorationPoint className="size-10 z-10 absolute -top-[1.55px] -left-[1.302px] bg-pallete-6" />
+        <CardDecorationPoint className="size-10 z-10 absolute -top-[1.55px] -right-[1.302px] bg-pallete-6 rotate-90" />
+        <CardDecorationPoint className="size-10 z-10 absolute -bottom-[1.6px] -left-[1.302px] bg-pallete-6 -rotate-90" />
+        <CardDecorationPoint className="size-10 z-10 absolute -bottom-[1.55px] -right-[1.302px] bg-pallete-6 rotate-180" />
       </div>
       {children}
     </div>

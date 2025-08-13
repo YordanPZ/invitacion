@@ -7,13 +7,11 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="es" className="bg-pallete-1 ">
-      
-      <body
-        className={`flex justify-center items-center bg-pallete-1 `}
-      >
-        {children}
-      </body>
-    </html>
+    <main
+      suppressHydrationWarning
+      className={`flex justify-center items-center bg-pallete-1 `}
+    >
+      {children}
+    </main>
   );
 }
