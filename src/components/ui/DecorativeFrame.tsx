@@ -38,9 +38,9 @@ export default function DecorativeFrame({ className }: { className?: string }) {
 
         {/*Dia*/}
         <section className="flex flex-col items-center justify-center w-full">
-          <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Día</h2>
-          <p className="text-[#655b59] text-[17px] mt-5">
-            Sábado 15 de Junio - 17hs
+          <h2 className="text-pallete-4 font-serif text-4xl mt-7">Día</h2>
+          <p className="text-pallete-1 text-[17px] my-5">
+            Sábado 13 de Septiembre - 17hs
           </p> 
           <Button variant={"primary"}>
           Agendar
@@ -50,17 +50,17 @@ export default function DecorativeFrame({ className }: { className?: string }) {
 
         {/*Lugar*/}
         <section className="flex flex-col items-center justify-center w-full">
-          <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Lugar</h2>
-          <p className="text-[#655b59] text-[17px] mt-5">Salon Avril</p>
+          <h2 className="text-pallete-4 font-serif text-4xl mt-7">Lugar</h2>
+          <p className="text-pallete-1 text-[17px] my-5">Salón Zaita</p>
         <AssistanceConfirmModal  nombreDelBoton="Confirmar asistencia"  />
     
        
         </section>  
         {/*Direccion*/}
         <section className="flex flex-col items-center justify-center w-full">
-          <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Direccion</h2>
-          <p className="text-[#655b59] text-[17px] mt-5">
-            Av. Principal #123, Colonia Centro
+          <h2 className="text-pallete-4 font-serif text-4xl mt-7">Direccion</h2>
+          <p className="text-pallete-1 text-[17px] my-5">
+          Acceso Isla Jordán
           </p>
           <MapModal />
         </section>

@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import DecorativeDivider from "../components/ui/DecorativeDivider";
 import Infinite from "./svg/Infinite";
-import { Button } from "./ui/button";
 import ModalComponent from "./ModalComponent";
 
 function GiftSection() {
@@ -57,8 +55,9 @@ function GiftSection() {
           className="w-15 h-15 mt-2 bg-transparent animate-bounce"
         />
       </div>
-      <p className="text-pallete-3  font-serif text-[15px] text-center my-5">
-          0909982348926375623856
+      <p className="text-pallete-4 font-serif text-[20px] text-center my-5">
+      CBU y Alias: tizi.spiritosi (alias) 
+      0000003100096619076411 (cvu)
         </p>
           </ModalComponent>
         

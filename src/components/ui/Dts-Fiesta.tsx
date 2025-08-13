@@ -145,15 +145,16 @@ export default function DtsFiesta() {
 
             <ModalComponent nombreDelBoton="Ver más">
             <div className="flex flex-col justify-center items-center gap-6">
-            <h2 className="text-[#655b59] font-serif text-2xl">Dress Code</h2>
             <Image
               height={100}
               width={100}
               alt="corbata"
               src="/corbata.png"
               className="w-24 h-24"/>
-            <p className="text-center">Una orientación para tu vestuario</p>
+            <h2 className="text-pallete-3 font-serif text-2xl">Dress Code</h2>
             </div>
+            <LineDecoration />
+            <p className="text-center text-[18px] text-pallete-1 my-5">Elegante / Formal</p>
             </ModalComponent>
 
           </div>
@@ -161,7 +162,7 @@ export default function DtsFiesta() {
       
         <DecoratedSection className="max-w-[350px] min-h-[500px] text-pallete-1">
           <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
-            <h2 className="text-[#655b59] font-serif text-2xl">Tips y Notas</h2>
+            <h2 className="text-pallete-1 font-serif text-2xl">Tips y Notas</h2>
             <Image
               height={100}
               width={100}
@@ -173,7 +174,6 @@ export default function DtsFiesta() {
            
             <ModalComponent nombreDelBoton="+ Info" >
         <div className="flex flex-col justify-center items-center gap-6">
-            <h2 className="text-[#655b59] font-serif text-2xl">Tips y Notas</h2>
             <Image
               height={100}
               width={100}
@@ -181,8 +181,10 @@ export default function DtsFiesta() {
               src="/libreta.png"
               className="w-24 h-24"
             />
-            <p className="text-center">Información adicional para tener en cuenta</p>
+            <h2 className="text-pallete-3 font-serif text-2xl">Tips y Notas</h2>
         </div>
+            <LineDecoration />
+            <p className="text-center text-[18px] text-pallete-1 my-5">Por favor ser puntual</p>
             </ModalComponent>
 
           </div>

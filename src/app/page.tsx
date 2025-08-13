@@ -20,7 +20,7 @@ export default function Page() {
             XV
           </h1>
           <h2 className="text-pallete-1 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-playfair-display text-center">
-            Florencia
+            Tiziana
           </h2>
           <div className="border-solid border-pallete-2 border-b mt-3 sm:mt-4 md:mt-5 w-[75%]" />
 
