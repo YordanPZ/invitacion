@@ -27,7 +27,7 @@ function ModalComponent({nombreDelBoton,children}:{nombreDelBoton:string,childre
               >
                 <div className="relative">
                   <DecoratedSection>
-                    <div className="flex border border-pallete-2 items-center justify-between flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
+                    <div className="flex items-center justify-between flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
                       <DialogClose asChild>
                         <Button
                           type="button"

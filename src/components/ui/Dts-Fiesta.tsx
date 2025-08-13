@@ -1,5 +1,8 @@
 import Link from "next/link";
 import DecoratedSection from "./DecoratedSection";
+import ModalComponent from "../ModalComponent";
+import { DialogTitle } from "@radix-ui/react-dialog";
+import LineDecoration from "../svg/LineDecoration";
 
 export default function DtsFiesta() {
   return (
@@ -71,12 +74,59 @@ export default function DtsFiesta() {
               ¿Cuál es la canción que no debe faltar en la PlayList de la
               fiesta?
             </p>
-            <Link
-              href="/"
-              className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center"
-            >
-              Sugerir canción
-            </Link>
+           
+            
+          
+
+<ModalComponent nombreDelBoton="Sugerir cancion">
+
+           
+             
+<div className="flex flex-col justify-center items-center w-full">
+              {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
+              <img src="/auricular.png" className="w-24 h-24 py-2" />
+              <DialogTitle className="text-pallete-2 font-serif text-[25px]">
+             Sugerir cancion
+              </DialogTitle>
+          <LineDecoration/>
+          <div className="flex gap-10 mt-6 ">
+           
+          </div>
+         
+          <div className="flex flex-col justify-center items-center w-full">
+           <label className="mt-6 w-full text-[18px] ">
+            <input type="text" placeholder="Tu nombre" className="w-full text-center text-black"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2 w-full"></div>
+           
+           <label className="mt-6 w-full text-[18px] ">
+            <input type="text" placeholder="Nombre de cancion y autor" className="w-full text-center text-black"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
+          
+           <label className="mt-6 w-full text-[18px] ">
+            <input type="text" placeholder="Si lo desea ingresa un link de youtube,spotify, etc." className="w-full text-center text-black"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
+          
+          </div>
+              <Link
+                href="/"
+                className="text-white text-center text-[20px] mt-8 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center"
+              >
+                Enviar
+              </Link>
+</div>
+            
+</ModalComponent>
+            
+           
+
+            
+            
           </div>
         </DecoratedSection>
 

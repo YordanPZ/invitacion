@@ -21,6 +21,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import ModalComponent from "@/components/ModalComponent";
+import LineDecoration from "@/components/svg/LineDecoration";
 export default function Page() {
   return (
     //contenedor principal
@@ -241,27 +242,42 @@ export default function Page() {
 
           <div className=" h-[40vh] min-h-[35vh] min-w-[45vh] bg-pallete-5 flex flex-col sm:items-end items-center justify-center ">
 
-
-
-
-
-
-
-
             {/* Nombre del boton */}
-            <ModalComponent nombreDelBoton="Sugerir cancion">
+            <ModalComponent nombreDelBoton="Confirmar asistencia a fiesta">
 
               {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
-              <DialogTitle className="text-[#655b59] font-serif text-2xl">
-                Dress Code
+              <img src="/confeti.png" className="w-24 h-24 py-2" />
+              <DialogTitle className="text-pallete-2 font-serif text-2xl">
+             ¿Asistes a la fiesta?
               </DialogTitle>
-              <img src="/confeti.png" className="w-24 h-24" />
-              <p>Una orientación para tu vestuario</p>
+          <LineDecoration/>
+          <div className="flex gap-10 mt-6">
+             <label><input type="checkbox"/> ¡Sí, confirmo!</label>
+           
+           <label>
+            <input type="checkbox"/> No puedo :( 
+              </label>
+          </div>
+         
+          <div className="flex flex-col justify-center items-center w-full">
+           <label className="mt-6 w-full ">
+            <input type="text" placeholder="                    Ingrese su nombre completo" className="w-full"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2 w-full"></div>
+           
+           <label className="mt-6 w-full ">
+            <input type="text" placeholder="      Ingrese un dato importante ej: soy vegetariano" className="w-full"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
+          
+          </div>
               <Link
                 href="/"
-                className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center"
+                className="text-white text-center text-[20px] mt-8 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center"
               >
-                Ver más
+                Enviar
               </Link>
 
 
@@ -271,13 +287,51 @@ export default function Page() {
 
 
 
+<ModalComponent nombreDelBoton="Sugerir cancion">
 
-            <Link
-              href="/"
-              className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900"
-            >
-              Sugerir canción
+            <Link href="/" className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900">
+             
+<div className="flex flex-col justify-center items-center w-full">
+              {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
+              <img src="/auricular.png" className="w-24 h-24 py-2" />
+              <DialogTitle className="text-pallete-2 font-serif text-[25px]">
+             Sugerir cancion
+              </DialogTitle>
+          <LineDecoration/>
+          <div className="flex gap-10 mt-6 ">
+           
+          </div>
+         
+          <div className="flex flex-col justify-center items-center w-full">
+           <label className="mt-6 w-full text-[18px] ">
+            <input type="text" placeholder="Tu nombre" className="w-full text-center text-black"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2 w-full"></div>
+           
+           <label className="mt-6 w-full text-[18px] ">
+            <input type="text" placeholder="Nombre de cancion y autor" className="w-full text-center text-black"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
+          
+           <label className="mt-6 w-full text-[18px] ">
+            <input type="text" placeholder="Si lo desea ingresa un link de youtube,spotify, etc." className="w-full text-center text-black"/>
+            </label>
+           
+           <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
+          
+          </div>
+              <Link
+                href="/"
+                className="text-white text-center text-[20px] mt-8 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center"
+              >
+                Enviar
+              </Link>
+</div>
+
             </Link>
+</ModalComponent>
 
             <Link
               href="/"
@@ -295,6 +349,7 @@ export default function Page() {
           <DecorativeDivider />
           <DecorativeDivider />
         </div>
+        {/*footer*/}
         <footer className="bg-[#d3af9b] w-full h-[20vh] text-amber-50 sombra_arriba_abajo flex items-center justify-center">
           todos los derechos reservados | &copy; 2025
         </footer>
