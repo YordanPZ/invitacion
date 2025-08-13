@@ -55,7 +55,7 @@ function AssistanceConfirmModal({nombreDelBoton,variant,bottomClassName}:{nombre
                 />
               </div>
             </div>
-            <Button className="text-white text-center text-[20px] mt-8 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center">
+            <Button className="text-white text-center text-[20px] mt-8 hover:bg-pallete-4 transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center">
               Enviar
             </Button>
           </ModalComponent>

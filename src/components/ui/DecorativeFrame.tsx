@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button } from "./button";
 import AssistanceConfirmModal from "../modals/AssistanceConfirmModal";
 import MapModal from "../modals/MapModal";
+import { Button } from "./button";
 
 export default function DecorativeFrame({ className }: { className?: string }) {
   return (
@@ -41,19 +41,21 @@ export default function DecorativeFrame({ className }: { className?: string }) {
           <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Día</h2>
           <p className="text-[#655b59] text-[17px] mt-5">
             Sábado 15 de Junio - 17hs
-          </p>
-        <AssistanceConfirmModal  nombreDelBoton="Agendar"  />
+          </p> 
+          <Button variant={"primary"}>
+          Agendar
+        
+         </Button>
         </section>
 
         {/*Lugar*/}
         <section className="flex flex-col items-center justify-center w-full">
           <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Lugar</h2>
           <p className="text-[#655b59] text-[17px] mt-5">Salon Avril</p>
-          <Button className="text-white text-center text-[20px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-full flex items-center justify-center">
-            Confirmar asistencia
-          </Button>
-        </section>
-
+        <AssistanceConfirmModal  nombreDelBoton="Confirmar asistencia"  />
+    
+       
+        </section>  
         {/*Direccion*/}
         <section className="flex flex-col items-center justify-center w-full">
           <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Direccion</h2>

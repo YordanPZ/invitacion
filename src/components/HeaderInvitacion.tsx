@@ -1,6 +1,8 @@
 import React from "react";
 import { CardDecoration } from "./svg/CardDecoration";
 import Image from "next/image";
+import { AdornoModalMusica } from "./svg/AdornoModalMusica";
+
 
 function HeaderInvitacion() {
   return (
@@ -25,16 +27,19 @@ function HeaderInvitacion() {
           <div className="flex items-center justify-center flex-col ">
             <h2 className="text-pallete-2 text-[20px]">18.11.2022</h2>
             <div className=" border-solid border-[#c3b5a8] border-b  mt-5 w-[60%]"></div>
-            <h1 className="text-[40px] text-[#d2b89f] mt-2">XV</h1>
-            <h2 className="text-[#655b59] font-serif text-7xl">Florencia</h2>
+            <h1 className="text-[40px] text-pallete-2 mt-2">XV</h1>
+            <h2 className="text-pallete-1 font-serif text-7xl">Florencia</h2>
             <div className=" border-solid border-[#c3b5a8] border-b  mt-5 w-[60%]"></div>
-            <h3 className="text-[#655b59] font-bold text-[20px] mt-4">
+            <h3 className="text-pallete-1 font-bold text-[20px] mt-4">
               MIS 15 AÑOS
             </h3>
-            <p className="text-[#655b59] font-serif text-[18px] mt-5 text-center">
+            <p className="text-pallete-1 font-serif text-[18px] mt-5 text-center">
               Te espero para compartir la alegría de esa noche que será para mi
               mágica, inolvidable y única.
             </p>
+            <div className="mt-5">
+            <AdornoModalMusica/>
+            </div>
           </div>
         </div>
       </div>
