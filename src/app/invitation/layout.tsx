@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Invitación a mi fiesta",
-  description: "¡Te invito a celebrar conmigo!",
+  title: "XV Años de Tiziana - 13/09/2025",
+  description: "¡Te invito a celebrar mis XV años! Salón Zaita - Acceso Isla Jordán",
 };
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

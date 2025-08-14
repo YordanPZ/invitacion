@@ -35,7 +35,7 @@ function ModalComponent({
         </DialogTrigger>
         <DialogContent
           showCloseButton={false}
-          className={`bg-pallete-6 p-4 shadow-none border-none ${contentClassName || ''}`}
+          className={`bg-pallete-6 p-4 shadow-none border-none font-playfair ${contentClassName || ''}`}
         >
           <DialogTitle />
           <div className="relative">

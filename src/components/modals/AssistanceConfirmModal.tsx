@@ -13,6 +13,7 @@ function AssistanceConfirmModal({nombreDelBoton,variant,bottomClassName}:{nombre
   return (
      <ModalComponent nombreDelBoton={nombreDelBoton??"Confirmar asistencia a fiesta"} bottomClassName={bottomClassName} variant={variant}>
             {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
+            <div className="font-playfair">
             <Image
               height={100}
               width={100}
@@ -20,7 +21,7 @@ function AssistanceConfirmModal({nombreDelBoton,variant,bottomClassName}:{nombre
               src="/confeti.png"
               className="w-24 h-24"
             />
-            <DialogTitle className="text-pallete-2 font-serif text-2xl">
+            <DialogTitle className="text-pallete-2 text-2xl">
               ¿Asistes a la fiesta?
             </DialogTitle>
             <LineDecoration />
@@ -45,19 +46,20 @@ function AssistanceConfirmModal({nombreDelBoton,variant,bottomClassName}:{nombre
               <div className="mt-6 w-full border-b-1 border-pallete-3 ">
                 <Input
                   placeholder="Ingrese su nombre completo"
-                  className="w-full border-none border-b-solid shadow-none outline-none border-pallete-2 border-b  mt-2 "
+                  className="w-full border-none border-b-solid shadow-none outline-none border-pallete-2 border-b  mt-2 text-pallete-1"
                 />
               </div>
               <div className="mt-6 w-full border-b-1 border-pallete-3 ">
                 <Input
                   placeholder="Ingrese un dato importante ej: soy vegetariano"
-                  className="w-full border-none border-b-solid shadow-none outline-none border-pallete-2 border-b-1  mt-2 "
+                  className="w-full border-none border-b-solid shadow-none outline-none border-pallete-2 border-b-1  mt-2 text-pallete-1"
                 />
               </div>
             </div>
             <Button className="text-white text-center text-[20px] mt-8 hover:bg-pallete-4 transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center">
               Enviar
             </Button>
+            </div>
           </ModalComponent>
   )
 }

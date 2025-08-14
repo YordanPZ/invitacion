@@ -14,7 +14,7 @@ export default function DecorativeFrame({ className }: { className?: string }) {
           src="/confeti.png"
           className="w-24 h-24 mt-12"
         />
-        <h2 className="text-[#655b59] font-serif text-5xl mt-12">Fiesta</h2>
+        <h2 className="text-[#655b59] font-playfair text-5xl mt-12">Fiesta</h2>
         <div className="flex items-center justify-center w-full px-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +58,9 @@ export default function DecorativeFrame({ className }: { className?: string }) {
         </section>  
         {/*Direccion*/}
         <section className="flex flex-col items-center justify-center w-full">
-          <h2 className="text-[#8c755e] font-serif text-4xl mt-7">Direccion</h2>
+          <h2 className="text-[#8c755e] font-playfair text-4xl mt-7">Direccion</h2>
           <p className="text-[#655b59] text-[17px] mt-5">
-            Av. Principal #123, Colonia Centro
+            Acceso Isla Jordán
           </p>
           <MapModal />
         </section>

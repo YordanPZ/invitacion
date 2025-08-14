@@ -11,10 +11,10 @@ function FinalMessage() {
       </div>
 
       <div>
-        <h2 className="text-[#655b59] font-serif text-4xl text-center mt-6">
+        <h2 className="text-[#655b59] font-playfair text-4xl text-center mt-6">
           Una gran Fiesta junto a vos
         </h2>
-        <p className="text-pallete-2  font-serif text-[18px] text-center mt-1">
+        <p className="text-pallete-2  font-playfair text-[18px] text-center mt-1">
           Compartí tus fotos y videos de ese hermoso día
         </p>
       </div>
@@ -33,13 +33,13 @@ function FinalMessage() {
         <div className="h-[60px] w-[190px] bg-pallete-5 rounded-[4px] absolute"></div>
         <div className="h-[90px] w-[160px] bg-pallete-5 rounded-[4px] absolute"></div>
         <h2 className="text-pallete-2  text-5xl text-center mt-1 z-10">
-          #15flor
+          #15tizi
         </h2>
       </div>
 
       <div className="flex items-center justify-center mt-18">
         <Link
-          href="https://www.instagram.com/explore/search/keyword/?q=%2315flor"
+          href="https://www.instagram.com/explore/search/keyword/?q=%2315tizi"
           target="_blank"
           className="text-white text-center text-[17px] mt-2 hover:bg-[#8c755e] transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[250px] flex items-center justify-center"
         >

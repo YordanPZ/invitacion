@@ -22,8 +22,8 @@ const mapContainer = useRef<HTMLDivElement>(null)
         map.current = new mapboxgl.Map({
           container: mapContainer.current,
           style: "mapbox://styles/mapbox/streets-v12",
-          center: [-99.1332, 19.4326],
-          zoom: 10,
+          center: [-67.9788814, -38.9606299],
+          zoom: 12,
           attributionControl: true,
         })
 
@@ -34,8 +34,8 @@ const mapContainer = useRef<HTMLDivElement>(null)
         new mapboxgl.Marker({
           color: "#ef4444",
         })
-          .setLngLat([-99.1332, 19.4326])
-          .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML("<h3>Ciudad de México</h3><p>¡Hola desde el mapa!</p>"))
+          .setLngLat([-67.9788814, -38.9606299])
+          .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML("<h3>Salón Zaita</h3><p>Acceso Isla Jordán</p><a href='https://maps.app.goo.gl/qBL1j8FJB3Q6HRuA7' target='_blank' style='color: #ef4444; text-decoration: underline;'>Ver en Google Maps</a>"))
           .addTo(map.current)
 
         setTimeout(() => {
@@ -56,7 +56,7 @@ const mapContainer = useRef<HTMLDivElement>(null)
   }, [isModalOpen])
   return (
      <ModalComponent nombreDelBoton={"¿Cómo llegar?"} onOpenChange={setIsModalOpen} contentClassName='w-full max-w-4xl mx-auto min-w-[320px] sm:min-w-[400px] md:min-w-[600px] lg:min-w-[800px]' >
-        <div className="w-full h-full">
+        <div className="w-full h-full font-playfair">
             <div className='flex justify-center flex-col items-center'>
                 <LocationEdit className='w-10 h-10 text-pallete-3' />
 

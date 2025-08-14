@@ -55,10 +55,10 @@ export default function PhotoGallerySection() {
         </svg>
       </div>
       {/*contenido de la seccion*/}
-      <h2 className="text-[#655b59] font-serif text-4xl text-center mt-6">
+      <h2 className="text-[#655b59] font-playfair text-4xl text-center mt-6">
         Un recorrido de estos 15 años
       </h2>
-      <p className="text-[#8c755e] font-serif text-[17px] text-center mt-1">
+      <p className="text-[#8c755e] font-playfair text-[17px] text-center mt-1">
         Junto a personas que son muy importantes en mi vida
       </p>
       <div className="flex justify-center mb-6 relative mt-10">
