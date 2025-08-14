@@ -152,8 +152,10 @@ export default function DtsFiesta() {
               alt="corbata"
               src="/corbata.png"
               className="w-24 h-24"/>
-            <p className="text-center text-sm text-pallete-1">Elegante / Formal</p>
+            <h2 className="text-pallete-3 font-serif text-2xl">Dress Code</h2>
             </div>
+            <LineDecoration />
+            <p className="text-center text-[18px] text-pallete-1 my-5">Elegante / Formal</p>
             </ModalComponent>
 
           </div>
@@ -185,6 +187,8 @@ export default function DtsFiesta() {
               <p className="text-lg  mb-2 text-pallete-1">Por favor ser puntual</p>
             </div>
         </div>
+            <LineDecoration />
+            <p className="text-center text-[18px] text-pallete-1 my-5">Por favor ser puntual</p>
             </ModalComponent>
 
           </div>

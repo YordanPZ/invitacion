@@ -9,8 +9,8 @@ interface TimeLeft {
 }
 
 export default function CountdownTimer() {
-  // Fecha objetivo: 18 de Noviembre de 2025 a las 20:00
-  const targetDate = new Date("2025-09-18T20:00:00").getTime();
+  // Fecha objetivo: 13 de Septiembre de 2025 a las 00:00
+  const targetDate = new Date("2025-09-13T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
   function calculateTimeLeft(): TimeLeft {

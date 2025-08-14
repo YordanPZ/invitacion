@@ -26,7 +26,7 @@ function AssitanceConfirmation() {
         <div className="w-[50%] min-h-[35vh] min-w-[45vh] bg-pallete-5 flex flex-col items-center justify-center">
           <div className=" border-solid border-[#c3b5a8] border-b  mt-5 w-[60%]"></div>
           <h1 className="text-[50px] text-[#d2b89f] mt-2">XV</h1>
-          <h2 className="text-[#655b59] font-serif text-[60px]">Florencia</h2>
+          <h2 className="text-[#655b59] font-serif text-[60px]">Tiziana</h2>
           <div className=" border-solid border-[#c3b5a8] border-b  mt-3 w-[60%]"></div>
           <h3 className="text-[#655b59]  text-[20px] ">MIS 15 AÑOS</h3>
         </div>
