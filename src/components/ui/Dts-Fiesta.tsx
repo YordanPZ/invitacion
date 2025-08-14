@@ -5,6 +5,10 @@ import { DialogTitle } from "@radix-ui/react-dialog";
 import LineDecoration from "../svg/LineDecoration";
 import Image from "next/image";
 import { Button } from "./button";
+import Paper from "../svg/Paper";
+import Mono from "../svg/Mono";
+import Music from "../svg/Music";
+
 
 export default function DtsFiesta() {
   return (
@@ -71,13 +75,7 @@ export default function DtsFiesta() {
         <DecoratedSection className="max-w-[350px] min-h-[500px] text-pallete-1">
           <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
             <h2 className="text-[#655b59] font-playfair text-2xl ">Música</h2>
-            <Image
-              height={100}
-              width={100}
-              alt="confite"
-              src="/confeti.png"
-              className="w-24 h-24"
-            />
+           <Music className="w-30" />
             <p className="text-center text-pallete-1">
               ¿Cuál es la canción que no debe faltar en la PlayList de la
               fiesta?
@@ -85,13 +83,7 @@ export default function DtsFiesta() {
             <ModalComponent nombreDelBoton="Sugerir cancion">
               <div className="flex flex-col justify-center items-center w-full">
                 {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
-                <Image
-                  alt="auricular"
-                  src="/auricular.png"
-                  className="w-24 h-24 py-2"
-                  height={50}
-                  width={50}
-                />
+                <Music className="w-30" />
                 <DialogTitle className="text-pallete-2 font-playfair text-[25px]">
                   Sugerir cancion
                 </DialogTitle>
@@ -135,27 +127,16 @@ export default function DtsFiesta() {
           <div className="flex border border-pallete-2 items-center justify-between flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
           
             <h2 className="text-[#655b59] font-playfair text-2xl">Dress Code</h2>
-            <Image
-              height={100}
-              width={100}
-              alt="corbata"
-              src="/corbata.png"
-              className="w-24 h-24"/>
+            <Mono  className="size-30" />
             <p className="text-center text-pallete-1">Una orientación para tu vestuario</p>
 
             <ModalComponent nombreDelBoton="Ver más">
             <div className="flex flex-col justify-center items-center gap-6 font-playfair">
-            <h2 className="text-[#655b59] text-2xl">Dress Code</h2>
-            <Image
-              height={100}
-              width={100}
-              alt="corbata"
-              src="/corbata.png"
-              className="w-24 h-24"/>
-            <h2 className="text-pallete-3 font-serif text-2xl">Dress Code</h2>
+      <Mono className="size-30" />
+            <h2 className="text-pallete-3 text-2xl">Dress Code</h2>
             </div>
             <LineDecoration />
-            <p className="text-center text-[18px] text-pallete-1 my-5">Elegante / Formal</p>
+            <p className="text-center text-[18px] font-normal font-playfair text-pallete-1 my-5">Elegante / Formal</p>
             </ModalComponent>
 
           </div>
@@ -163,29 +144,16 @@ export default function DtsFiesta() {
       
         <DecoratedSection className="max-w-[350px] min-h-[500px] text-pallete-1">
           <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
-            <h2 className="text-[#655b59] font-playfair text-2xl">Tips y Notas</h2>
-            <Image
-              height={100}
-              width={100}
-              alt="libreta"
-              src="/libreta.png"
-              className="w-24 h-24"
-            />
-            <p className="w-[65%] text-center text-pallete-1">Tips importantes para la fiesta</p>
+            <h2 className="  font-playfair text-2xl">Tips y Notas</h2>
+            <Paper className="size-30"/>
+            <p className=" text-center text-pallete-1 ">Información adicional
+para tener en cuenta</p>
            
             <ModalComponent nombreDelBoton="+ Info" >
         <div className="flex flex-col justify-center items-center gap-6 font-playfair">
-            <h2 className="text-[#655b59] text-2xl">Tips y Notas</h2>
-            <Image
-              height={100}
-              width={100}
-              alt="libreta"
-              src="/libreta.png"
-              className="w-24 h-24"
-            />
-            <div className="text-center">
-              <p className="text-lg  mb-2 text-pallete-1">Por favor ser puntual</p>
-            </div>
+          <Paper />
+            <h2 className="text-pallete-2 text-2xl">Tips y Notas</h2>
+         
         </div>
             <LineDecoration />
             <p className="text-center text-[18px] text-pallete-1 my-5">Por favor ser puntual</p>

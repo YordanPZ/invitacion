@@ -4,12 +4,10 @@ import ModalComponent from "./ModalComponent";
 import { DialogTitle } from "./ui/dialog";
 import LineDecoration from "./svg/LineDecoration";
 import DecorativeDivider from "../components/ui/DecorativeDivider";
-import Image from "next/image";
-import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import AssistanceConfirmModal from "./modals/AssistanceConfirmModal";
+import Music from "./svg/Music";
+import AddEventButton from "./ui/AddEventButton";
 
 function AssitanceConfirmation() {
   return (
@@ -26,7 +24,7 @@ function AssitanceConfirmation() {
         <div className="w-[50%] min-h-[35vh] min-w-[45vh] bg-pallete-5 flex flex-col items-center justify-center">
           <div className=" border-solid border-[#c3b5a8] border-b  mt-5 w-[60%]"></div>
           <h1 className="text-[50px] text-[#d2b89f] mt-2">XV</h1>
-          <h2 className="text-[#655b59] font-serif text-[60px]">Tiziana</h2>
+          <h2 className="text-[#655b59]   text-[60px]">Tiziana</h2>
           <div className=" border-solid border-[#c3b5a8] border-b  mt-3 w-[60%]"></div>
           <h3 className="text-[#655b59]  text-[20px] ">MIS 15 AÑOS</h3>
         </div>
@@ -38,14 +36,9 @@ function AssitanceConfirmation() {
             <div className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900"> 
               <div className="flex flex-col justify-center items-center w-full">
                 {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
-                <Image
-                  alt="auricular"
-                  src="/auricular.png"
-                  className="w-24 h-24 py-2"
-                  height={50}
-                  width={50}
-                />
-                <DialogTitle className="text-pallete-2 font-serif text-[25px]">
+                <Music className="size-30" />
+
+                <DialogTitle className="text-pallete-2   text-[25px]">
                   Sugerir cancion
                 </DialogTitle>
                 <LineDecoration />
@@ -82,9 +75,23 @@ function AssitanceConfirmation() {
               </div>
             </div>
           </ModalComponent>
-          <Button className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900" variant={'ghost' as any} >
-            Agendar fiesta
-          </Button>
+           <div>
+           <AddEventButton style={{
+        display: 'inline-block',
+        padding: '12px 24px',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontWeight: '600',
+        fontSize: '18px',
+        textDecoration: 'none',
+        width:"100%",
+        border: 'none',
+        fontFamily:"sans-serif",
+        color:"#d2b89f",
+
+        
+      }} />
+          </div>
         </div>
       </div>
 

@@ -5,11 +5,10 @@ import Infinite from "./svg/Infinite";
 
 function FinalMessage() {
   return (
-    <section className="min-h-[84vh] bg-pallete-6 w-full flex flex-col sombra_arriba_abajo pb-4">
+    <section className="min-h-[80vh]  bg-pallete-6 w-full flex flex-col sombra_arriba_abajo pb-4">
       <div className="flex items-center justify-center mt-20">
         <Infinite />
       </div>
-
       <div>
         <h2 className="text-[#655b59] font-playfair text-4xl text-center mt-6">
           Una gran Fiesta junto a vos

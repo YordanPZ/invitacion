@@ -4,23 +4,17 @@ import { Label } from '../ui/label'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import LineDecoration from '../svg/LineDecoration'
 import { DialogTitle } from '../ui/dialog'
-import Image from 'next/image'
 import ModalComponent from '../ModalComponent'
 import { Button } from '../ui/button'
+import Confetti from '../svg/Confetti'
 
 function AssistanceConfirmModal({nombreDelBoton,variant,bottomClassName}:{nombreDelBoton?:string,variant?: "primary" | "secondary",bottomClassName?:string}) {
 
   return (
      <ModalComponent nombreDelBoton={nombreDelBoton??"Confirmar asistencia a fiesta"} bottomClassName={bottomClassName} variant={variant}>
             {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
-            <div className="font-playfair">
-            <Image
-              height={100}
-              width={100}
-              alt="confite"
-              src="/confeti.png"
-              className="w-24 h-24"
-            />
+            <div className="font-playfair flex justify-center flex-col items-center">
+            <Confetti className="size-30"/>
             <DialogTitle className="text-pallete-2 text-2xl">
               ¿Asistes a la fiesta?
             </DialogTitle>
@@ -56,7 +50,7 @@ function AssistanceConfirmModal({nombreDelBoton,variant,bottomClassName}:{nombre
                 />
               </div>
             </div>
-            <Button className="text-white text-center text-[20px] mt-8 hover:bg-pallete-4 transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] flex items-center justify-center">
+            <Button className="text-white text-center text-[20px] mt-8 hover:bg-pallete-4 transition-all duration-900 bg-[#b39072] rounded-[12px] h-[50px] w-[60%] ">
               Enviar
             </Button>
             </div>

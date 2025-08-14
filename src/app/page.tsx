@@ -26,13 +26,22 @@ export default function Page() {
       <DtsFiesta />
 
       {/*contenedor de regalos*/}
+        <div className="max-h-[600px] w-full">
+
       <GiftSection />
+      </div>
 
       {/*contenedor de mensaje final*/}
+      <div className="max-h-[600px] w-full">
+
       <FinalMessage />
+      </div>
 
       {/*contenedor de confirmacion de asistencia*/}
+       <div className="max-h-[600px] w-full">
+
       <AssitanceConfirmation />
+      </div>
 
       {/*footer*/}
       <Footer />

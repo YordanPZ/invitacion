@@ -3,6 +3,7 @@ import React from "react";
 import DecorativeDivider from "../components/ui/DecorativeDivider";
 import Infinite from "./svg/Infinite";
 import ModalComponent from "./ModalComponent";
+import CopiComponent from "./CopiComponent";
 
 function GiftSection() {
   return (
@@ -19,10 +20,10 @@ function GiftSection() {
         <Infinite />
       </div>
       <div>
-        <h2 className="text-pallete-1 font-serif text-5xl text-center mt-6">
+        <h2 className="text-pallete-1   text-5xl text-center mt-6">
           Regalos
         </h2>
-        <p className="text-pallete-3  font-serif text-[23px] text-center mt-1">
+        <p className="text-pallete-3    text-[23px] text-center mt-1">
           Si deseas regalarme algo más que tu hermosa presencia...
         </p>
       </div>
@@ -39,10 +40,10 @@ function GiftSection() {
        
           <ModalComponent nombreDelBoton="Numero de CBU" >
           <div className="flex flex-col items-center justify-center my-10 gap-5">
-        <h2 className="text-pallete-1 font-serif text-5xl text-center mt-6">
+        <h2 className="text-pallete-1   text-5xl text-center mt-6">
           Regalos
         </h2>
-        <p className="text-pallete-3  font-serif text-[15px] text-center mt-1">
+        <p className="text-pallete-3    text-[15px] text-center mt-1">
           Si deseas regalarme algo más que tu hermosa presencia...
         </p>
       </div>
@@ -55,10 +56,23 @@ function GiftSection() {
           className="w-15 h-15 mt-2 bg-transparent animate-bounce"
         />
       </div>
-      <p className="text-pallete-4 font-serif text-[20px] text-center my-5">
-      CBU y Alias: tizi.spiritosi (alias) 
-      0000003100096619076411 (cvu)
+      <div className="flex flex-col gap-2 text-center my-5">
+        <p className="text-pallete-4 text-xl font-medium">
+          CBU y Alias
         </p>
+        <div className="flex items-center justify-center gap-2">
+          <p className="text-pallete-4 text-lg">
+            <span className="font-semibold">Alias:</span> tizi.spiritosi
+          </p>
+           <CopiComponent text='tizi.spiritosi' />
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          <p className="text-pallete-4 text-lg">
+            <span className="font-semibold">CVU:</span> 0000003100096619076411
+          </p>
+          <CopiComponent text='0000003100096619076411' />
+        </div>
+      </div>
           </ModalComponent>
         
       </div>
