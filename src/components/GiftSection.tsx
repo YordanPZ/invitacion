@@ -7,23 +7,17 @@ import CopiComponent from "./CopiComponent";
 
 function GiftSection() {
   return (
-    <section className="min-h-[70vh] max-h-[600px] bg-pallete-5 w-full flex flex-col sombra_arriba_abajo justify-center items-center ">
-      <div className="flex gap-5 items-center justify-center relative overflow-x-hidden bg-pallete-5 w-full py-6">
-        <DecorativeDivider />
-        <DecorativeDivider />
-        <DecorativeDivider />
-        <DecorativeDivider />
-        <DecorativeDivider />
-      </div>
+    <section className="min-h-[70vh] max-h-[600px] bg-pallete-6 w-full flex flex-col sombra_arriba_abajo justify-center items-center ">
+    
 
-      <div className="flex items-center justify-center mt-20">
+      <div className="flex items-center justify-center">
         <Infinite />
       </div>
       <div>
-        <h2 className="text-pallete-1   text-5xl text-center mt-6">
+        <h2 className="text-pallete-1 text-5xl text-center mt-6">
           Regalos
         </h2>
-        <p className="text-pallete-3    text-[23px] text-center mt-1">
+        <p className="text-pallete-3    text-[23px] text-center mt-5">
           Si deseas regalarme algo más que tu hermosa presencia...
         </p>
       </div>
@@ -76,13 +70,7 @@ function GiftSection() {
           </ModalComponent>
         
       </div>
-      <div className="flex gap-5 items-center justify-center relative overflow-x-hidden bg-pallete-5 w-full py-6 mb-1 mt-14">
-        <DecorativeDivider />
-        <DecorativeDivider />
-        <DecorativeDivider />
-        <DecorativeDivider />
-        <DecorativeDivider />
-      </div>
+   
     </section>
   );
 }

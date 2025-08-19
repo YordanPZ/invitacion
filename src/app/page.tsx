@@ -20,7 +20,7 @@ export default function Page() {
       <PartyData />
 
       {/*contenedor de carruzel*/}
-      <CarrouselSection />
+      {/* <CarrouselSection /> */}
 
       {/*contenedor de datos de la fiesta*/}
       <DtsFiesta />
@@ -32,10 +32,10 @@ export default function Page() {
       </div>
 
       {/*contenedor de mensaje final*/}
-      <div className="max-h-[600px] w-full">
+      {/* <div className="max-h-[600px] w-full">
 
       <FinalMessage />
-      </div>
+      </div> */}
 
       {/*contenedor de confirmacion de asistencia*/}
        <div className="max-h-[600px] w-full">

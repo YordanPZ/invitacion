@@ -1,19 +1,27 @@
-import Link from "next/link";
 import DecoratedSection from "./DecoratedSection";
 import ModalComponent from "../ModalComponent";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import LineDecoration from "../svg/LineDecoration";
-import Image from "next/image";
 import { Button } from "./button";
 import Paper from "../svg/Paper";
 import Mono from "../svg/Mono";
 import Music from "../svg/Music";
+import DecorativeDivider from "./DecorativeDivider";
+import DecoratedSectionWhite from "./DecoratedSectionWhite";
+
 
 
 export default function DtsFiesta() {
   return (
-    <section className="min-h-[90vh] bg-pallete-6 w-full flex flex-col justify-center sombra_arriba_abajo pb-4 px-2">
-      <div className="flex justify-center ">
+    <section className="min-h-[90vh] bg-pallete-5 w-full flex flex-col justify-center sombra_arriba_abajo pb-4 px-2">
+      <div className="flex gap-5 items-center justify-center relative overflow-x-hidden bg-pallete-5 w-full py-6 ">
+             <DecorativeDivider />
+             <DecorativeDivider />
+             <DecorativeDivider />
+             <DecorativeDivider />
+             <DecorativeDivider />
+           </div>   
+      <div className="flex justify-center mt-2">
         <svg
           width="300"
           height="24"
@@ -68,13 +76,14 @@ export default function DtsFiesta() {
       <h2 className="text-pallete-1 font-playfair text-4xl text-center mt-6">
         Un recorrido de estos 15 años
       </h2>
-      <p className="text-[#8c755e] font-playfair text-[17px] text-center mt-1">
+      <p className="text-[#8c755e] font-playfair text-[17px] text-center mt-5">
         Junto a personas que son muy importantes en mi vida
       </p>
-      <div className="flex justify-evenly mt-6 flex-wrap gap-4">
-        <DecoratedSection className="max-w-[350px] min-h-[500px] text-pallete-1">
+      
+      <div className="flex justify-evenly mt-8 flex-wrap gap-4">
+        <DecoratedSectionWhite className="max-w-[350px] min-h-[500px] text-pallete-1 ">
           <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
-            <h2 className="text-[#655b59] font-playfair text-2xl ">Música</h2>
+            <h2 className="text-pallete-1 font-playfair text-2xl ">Música</h2>
            <Music className="w-30" />
             <p className="text-center text-pallete-1">
               ¿Cuál es la canción que no debe faltar en la PlayList de la
@@ -97,7 +106,7 @@ export default function DtsFiesta() {
                       className="w-full text-center text-pallete-1"
                     />
                   </label>
-                  <div className=" border-solid border-[#c3b5a8] border-b  mt-2 w-full"></div>
+                  <div className=" border-solid border-pallete-2 border-b  mt-2 w-full"></div>
                   <label className="mt-6 w-full text-[18px] ">
                     <input
                       type="text"
@@ -121,9 +130,9 @@ export default function DtsFiesta() {
               </div>
             </ModalComponent>
           </div>
-        </DecoratedSection>
+        </DecoratedSectionWhite>
       
-        <DecoratedSection className="max-w-[350px] min-h-[500px] text-pallete-1"> 
+        <DecoratedSectionWhite className="max-w-[350px] min-h-[500px] text-pallete-1"> 
           <div className="flex border border-pallete-2 items-center justify-between flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
           
             <h2 className="text-[#655b59] font-playfair text-2xl">Dress Code</h2>
@@ -140,10 +149,10 @@ export default function DtsFiesta() {
             </ModalComponent>
 
           </div>
-        </DecoratedSection>
+        </DecoratedSectionWhite>
       
-        <DecoratedSection className="max-w-[350px] min-h-[500px] text-pallete-1">
-          <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3">
+        <DecoratedSectionWhite className="max-w-[350px] min-h-[500px] text-pallete-1">
+          <div className="flex border border-pallete-2 justify-between items-center flex-col min-h-full bg-pallete-5 rounded-[12px] relative z-0 p-3 ">
             <h2 className="  font-playfair text-2xl">Tips y Notas</h2>
             <Paper className="size-30"/>
             <p className=" text-center text-pallete-1 ">Información adicional
@@ -160,8 +169,15 @@ para tener en cuenta</p>
             </ModalComponent>
 
           </div>
-        </DecoratedSection>
+        </DecoratedSectionWhite>
       </div>
+      <div className="flex gap-5 items-center justify-center relative overflow-x-hidden bg-pallete-5 w-full py-8 ">
+             <DecorativeDivider />
+             <DecorativeDivider />
+             <DecorativeDivider />
+             <DecorativeDivider />
+             <DecorativeDivider />
+           </div> 
     </section>
   );
 }

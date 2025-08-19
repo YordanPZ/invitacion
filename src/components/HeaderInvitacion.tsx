@@ -12,7 +12,7 @@ function HeaderInvitacion() {
           priority
           height={800}
           width={800}
-          src="/portada.webp"
+          src="/Tiziana-Ft.jpg"
           className="object-cover w-full h-full z-0"
           alt=""
         />
