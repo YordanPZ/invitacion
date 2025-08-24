@@ -9,7 +9,7 @@ export default function DecorativeFrame({ className }: { className?: string }) {
   return (
     <div className="flex border border-pallete-2 items-center flex-col md:min-w-[400px] bg-pallete-5 rounded-[12px] relative z-0 p-3">
       <div className="flex flex-col justify-center items-center">
-        <Confetti className="size-30"/>
+        <Confetti className="size-30" />
         <h2 className="text-[#655b59] font-playfair text-5xl mt-12">Fiesta</h2>
         <div className="flex items-center justify-center w-full px-8">
           <svg
@@ -36,22 +36,22 @@ export default function DecorativeFrame({ className }: { className?: string }) {
         <section className="flex flex-col items-center justify-center w-full">
           <h2 className="text-pallete-4   text-4xl mt-7 mb-1">Día</h2>
           <p className="text-pallete-1 text-[17px] mb-4">
-            Sábado 13 de Septiembre - 17hs
-          </p> 
+            Sábado 13 de Septiembre - 20:30 hs
+          </p>
           <div>
-           <AddEventButton style={{
-        display: 'inline-block',
-        padding: '12px 24px',
-        backgroundColor: ' #b49073',
-        borderRadius: '6px',
-        cursor: 'pointer',
-        fontWeight: '600',
-        fontSize: '16px',
-        textDecoration: 'none',
-        color: '#fff',
-        border: 'none',
-        fontFamily:"sans-serif"
-      }} />
+            <AddEventButton style={{
+              display: 'inline-block',
+              padding: '12px 24px',
+              backgroundColor: ' #b49073',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontWeight: '600',
+              fontSize: '16px',
+              textDecoration: 'none',
+              color: '#fff',
+              border: 'none',
+              fontFamily: "sans-serif"
+            }} />
           </div>
         </section>
 
@@ -61,9 +61,9 @@ export default function DecorativeFrame({ className }: { className?: string }) {
           <p className="text-pallete-1 text-[17px] mb-4">Salón Zaita</p>
           <div>
 
-       <AssistanceConfirmModal  nombreDelBoton="Confirmar asistencia"  />
+            <AssistanceConfirmModal nombreDelBoton="Confirmar asistencia" />
           </div>
-        </section>  
+        </section>
         {/*Direccion*/}
         <section className="flex flex-col items-center justify-center w-full">
           <h2 className="text-[#8c755e] font-playfair text-4xl mt-7 mb-1">Direccion</h2>
