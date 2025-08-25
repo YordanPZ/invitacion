@@ -67,8 +67,8 @@ export default function AddEventButton({ className,style }: AddEventButtonProps)
       style={style}
     >
       Agendar
-      <span className="start">09/13/2024 17:00</span>
-      <span className="end">09/13/2024 23:00</span>
+      <span className="start">09/13/2025 20:30</span>
+      <span className="end">09/14/2025 00:30</span>
       <span className="timezone">America/Argentina/Buenos_Aires</span>
       <span className="title">Cumpleaños de 15 de Tizizana</span>
       <span className="description">Celebración del cumpleaños de 15 años de Tizizana. ¡No faltes!</span>

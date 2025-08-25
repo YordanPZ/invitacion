@@ -38,7 +38,7 @@ export default function DecorativeFrame({ className }: { className?: string }) {
           <p className="text-pallete-1 text-[17px] mb-4">
             Sábado 13 de Septiembre - 20:30 hs
           </p>
-          <div>
+          <div className=" w-full">
             <AddEventButton style={{
               display: 'inline-block',
               padding: '12px 24px',
@@ -49,6 +49,8 @@ export default function DecorativeFrame({ className }: { className?: string }) {
               fontSize: '16px',
               textDecoration: 'none',
               color: '#fff',
+              width: '100%',
+              textAlign: 'center',
               border: 'none',
               fontFamily: "sans-serif"
             }} />
@@ -59,7 +61,7 @@ export default function DecorativeFrame({ className }: { className?: string }) {
         <section className="flex flex-col items-center justify-center w-full">
           <h2 className="text-pallete-4   text-4xl mt-7 mb-1">Lugar</h2>
           <p className="text-pallete-1 text-[17px] mb-4">Salón Zaita</p>
-          <div>
+          <div className="w-full">
 
             <AssistanceConfirmModal nombreDelBoton="Confirmar asistencia" />
           </div>

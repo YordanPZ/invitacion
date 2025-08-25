@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import ModalComponent from "./ModalComponent";
 import { DialogTitle } from "./ui/dialog";
@@ -8,6 +7,7 @@ import { Button } from "./ui/button";
 import AssistanceConfirmModal from "./modals/AssistanceConfirmModal";
 import Music from "./svg/Music";
 import AddEventButton from "./ui/AddEventButton";
+import SuggestSongModal from "./modals/SuggestSongModal";
 
 function AssitanceConfirmation() {
   return (
@@ -31,66 +31,33 @@ function AssitanceConfirmation() {
 
         <div className=" h-[40vh] min-h-[35vh] min-w-[45vh] bg-pallete-5 flex flex-col sm:items-end items-center justify-center ">
           {/* Nombre del boton */}
-        <AssistanceConfirmModal bottomClassName="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900 w-fit flex sm:justify-end" variant={'ghost' as any} />
-          <ModalComponent nombreDelBoton="Sugerir cancion" bottomClassName="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900 flex sm:justify-end" variant={'ghost' as any} >
-            <div className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900"> 
-              <div className="flex flex-col justify-center items-center w-full">
-                {/* Contenido del modal (MANTENER EL DIALOGTILE) */}
-                <Music className="size-30" />
+          <div className="">
 
-                <DialogTitle className="text-pallete-2   text-[25px]">
-                  Sugerir cancion
-                </DialogTitle>
-                <LineDecoration />
-                <div className="flex gap-10 mt-6 "></div>
-                <div className="flex flex-col justify-center items-center w-full">
-                  <label className="mt-6 w-full text-[18px] ">
-                    <input
-                      type="text"
-                      placeholder="Tu nombre"
-                      className="w-full text-center text-black"
-                    />
-                  </label>
-                  <div className=" border-solid border-[#c3b5a8] border-b  mt-2 w-full"></div>
-                  <label className="mt-6 w-full text-[18px] ">
-                    <input
-                      type="text"
-                      placeholder="Nombre de cancion y autor"
-                      className="w-full text-center text-black"
-                    />
-                  </label>
-                  <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
-                  <label className="mt-6 w-full text-[18px] ">
-                    <input
-                      type="text"
-                      placeholder="Si lo desea ingresa un link de youtube,spotify, etc."
-                      className="w-full text-center text-black"
-                    />
-                  </label>
-                  <div className=" border-solid border-[#c3b5a8] border-b  mt-2  w-full"></div>
-                </div>
-                  <Button className="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900" variant={'ghost'}>
-                  Enviar
-                </Button>
-              </div>
-            </div>
-          </ModalComponent>
-           <div>
-           <AddEventButton style={{
-        display: 'inline-block',
-        padding: '12px 24px',
-        borderRadius: '6px',
-        cursor: 'pointer',
-        fontWeight: '600',
-        fontSize: '18px',
-        textDecoration: 'none',
-        width:"100%",
-        border: 'none',
-        fontFamily:"sans-serif",
-        color:"#d2b89f",
+            <AssistanceConfirmModal bottomClassName="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900 w-fit flex sm:justify-end" variant={'ghost' as any} />
 
-        
-      }} />
+          </div>
+          <div>
+
+            <SuggestSongModal nombreDelBoton="Sugerir cancion" bottomClassName="text-pallete-2 text-center mt-2 text-[20px] w-fit flex items-center justify-center hover:text-pallete-1 transition-all duration-900 flex sm:justify-end" variant={'ghost' as any} />
+
+          </div>
+          <div>
+            <AddEventButton style={{
+              display: 'inline-block',
+              padding: '12px 24px',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontWeight: '600',
+              fontSize: '18px',
+              textDecoration: 'none',
+              width: "100%",
+              border: 'none',
+              fontFamily: "sans-serif",
+              color: "#d2b89f",
+              marginTop: "8px"
+
+
+            }} />
           </div>
         </div>
       </div>

@@ -17,7 +17,8 @@ function ModalComponent({
    className,
    contentClassName,
    bottomClassName,
-   variant = "primary"
+   variant = "primary",
+   open
 }: {
   nombreDelBoton: string;
   children: React.ReactNode;
@@ -26,10 +27,11 @@ function ModalComponent({
    contentClassName?: string // Nueva prop para estilos específicos del contenido del modal
    bottomClassName?: string
    variant?: "primary" | "secondary"
+   open?: boolean
 }) {
   return (
     <div className={`relative w-full ${className || ''}`} suppressHydrationWarning>
-      <Dialog onOpenChange={onOpenChange}>
+      <Dialog onOpenChange={onOpenChange} open={open}>
         <DialogTrigger className="w-full" asChild>
           <Button className={`w-full py-6 ${bottomClassName}`} variant={variant??"primary"}>{nombreDelBoton}</Button>
         </DialogTrigger>
